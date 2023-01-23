@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-section {
+.banner {
     width: 100%;
     height: 95vh;
     background-image: url("../image/Img.jpg");
@@ -37,6 +37,7 @@ nav {
     background-color: #FFFFFF;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     padding: 0.5px 5%;
+    overflow:hidden;
 }
 
 nav ul {
@@ -54,8 +55,6 @@ nav ul li a {
     color: #505050;
     font-size: 15px;
     font-weight: 700;
-
-
 }
 
 .logo {
@@ -67,6 +66,15 @@ nav ul li a {
 .active {
     font-weight: bold;
     color: #2a2a2a;
+}
+
+@media(min-height:100px){
+    section{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        opacity: 1;
+    }
 }
 
 .text-container p:nth-child(1) {
@@ -533,7 +541,7 @@ footer p:nth-child(2) {
     body{
         width:100%
     }
-    section {
+    .banner {
         background-image: none;
         background-color: #f7f7f7;
     }
@@ -669,3 +677,11 @@ footer p:nth-child(2) {
         display:none;
     }
 }
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+

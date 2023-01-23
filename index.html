@@ -9,7 +9,7 @@
     <title>Odjey Crossley Ochuko</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <section>
             <nav>
                 <!-- get logo -->
@@ -29,8 +29,10 @@
                 </div>
     
             </nav>
+        </section>
+        <div class="banner">          
             <!-- TEXT -->
-            <div class="text-container" id="home">
+            <div class="text-container">
                 <p> HELLO </p>
                 <p> I'M CROSSLEY</p>
                 <p> I am a Web developer & <br> Software Engineer</p>
@@ -39,13 +41,13 @@
             </div>
             <!-- Model............... -->
             <img src="image/Me 1.png" class="model">
-        </section>
+        </div >
         <!-- About us section -->
-        <div class="about-container"> 
+        <div class="about-container"  id="about"> 
             <!-- img..... -->
             <img src="image/Me.jpg">
             <!-- about text -->
-        <div class="about-text" id="about">
+        <div class="about-text">
             <p>About</p>
             <p>Web Developer</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -141,16 +143,11 @@
    
     <!-- ...........jQuery........ -->
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="js.index.js"></script> -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.toggle').click(function(){
-                $('.toggle').toggleClass('active')
-                $('nav').toggleClass('active')
-            })
-        }) 
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript">
+      
 
-    </script>
+    </script> -->
 
 </body>
 </html>
